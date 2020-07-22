@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.8/d3.min.js" type="text/JavaScript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        
+        <!--nav heading-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-center">
+            <div class="navbar-brand">COVID-19 DV PROJECT
+                <span class="source-date">( April 22, 2020 )</span>
+            </div>
+        </nav>
+        
+        <hr>
+        
+        <!-- <<<<< BAR CHART >>>>> -->
+        
+        <div id="bar-chart"> 
+            <svg></svg>
+        </div>
+        
+        <hr>
+        
+        <!-- <<<<< CIRCLE >>>>> -->
+        
+        <div id="circle">
+            <h1>Corona Virus Pandemic</h1>
+            <h5>Analyze the ongoing spread of this infectious disease</h5>
+            <div id="controls"></div>
+            <svg></svg>
+        </div>
+        
+        <hr>
+        
+        <!-- <<<<< SPHERE MAP >>>>> -->
+        
+        <div id="map">
+            <h1>Corona Virus Pandemic</h1>
+            <h5>Rotate, Drag or Zoom the Globe to view the affected countries</h5>
+            <svg></svg>
+        </div>
+        
+        <hr>
+        
+        <!-- <<<<< PIE CHART >>>>> -->
+        <div class = "container-fluid">
+            <div class="row">
+
+                <div class="col-md-6" id="viz1">
+                    <h1 class="text-center"> Mapping The Spread </h1>
+                    <svg id="map2"></svg>
+                    <button class="affect" onClick="affectedAreas('Most')"> Most Effected Areas</button>
+                    <button class="affect" onClick="affectedAreas('Least')"> Least Effected Areas</button>
+                </div>
+                
+
+               <div class="col-md-6" id="viz2">
+                   <h1 class="text-center">Pie Chart</h1>
+                   <svg id="piechart" width="800" height="600"></svg>
+               </div>
+                
+            </div>
+       
+        </div>
+        
+        <hr>
+        
+        <!--scripts -->
+        <script src="scripts/math.js" type="text/JavaScript"></script>
+        <script src="scripts/map.js" type="text/JavaScript"></script>
+        <script src="scripts/bar-chart.js" type="text/JavaScript"></script>
+        <script src="scripts/circle.js" type="text/JavaScript"></script>
+        <script src="scripts/piechart.js" type="text/JavaScript"></script>
+
+    </body>
+</html>
